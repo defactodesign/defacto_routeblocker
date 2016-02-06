@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Defacto
+ * @package     Defacto_RouteBlocker
+ * @author      De Facto Design <developers@de-facto.com>
+ * @license     GPL-3.0
+ */
+-->
+<config>
+    <sections>
+        <admin>
+            <groups>
+                <defacto_routeblocker translate="label comment" module="defacto_routeblocker">
+                    <label>Route Blocker</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>36</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <enabled translate="label comment" module="defacto_routeblocker">
+                            <label>Enabled</label>
+                            <comment><![CDATA[Should routes be checked against the blacklist?]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </enabled>
+                        <routes translate="label comment" module="defacto_routeblocker">
+                            <label>Routes</label>
+                            <comment><![CDATA[Newline separated list of full action names to block]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </routes>
+                    </fields>
+                </defacto_routeblocker>
+            </groups>
+        </admin>
+    </sections>
+</config>

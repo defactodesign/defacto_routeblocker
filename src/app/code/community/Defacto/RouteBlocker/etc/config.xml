@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Defacto
+ * @package     Defacto_RouteBlocker
+ * @author      De Facto Design <developers@de-facto.com>
+ * @license     GPL-3.0
+ */
+-->
+<config>
+    <modules>
+        <Defacto_RouteBlockerl>
+            <version>1.0.0</version>
+        </Defacto_RouteBlockerl>
+    </modules>
+    <global>
+        <helpers>
+            <defacto_routeblocker>
+                <class>Defacto_RouteBlocker_Helper</class>
+            </defacto_routeblocker>
+        </helpers>
+        <models>
+            <defacto_routeblocker>
+                <class>Defacto_RouteBlocker_Model</class>
+            </defacto_routeblocker>
+        </models>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <defacto_route_blocker_check>
+                        <class>defacto_routeblocker/observer</class>
+                        <method>actionPreDispatch</method>
+                    </defacto_route_blocker_check>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </global>
+    <default>
+        <admin>
+            <defacto_routeblocker>
+                <enabled>0</enabled>
+                <routes></routes>
+            </defacto_routeblocker>
+        </admin>
+    </default>
+</config>

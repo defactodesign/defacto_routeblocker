@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Defacto
+ * @package     Defacto_RouteBlocker
+ * @author      De Facto Design <developers@de-facto.com>
+ * @license     GPL-3.0
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <admin>
+                                        <children>
+                                            <defacto_routeblocker translate="label" module="defacto_routeblocker">
+                                                <title>Route Blocker</title>
+                                            </defacto_routeblocker>
+                                        </children>
+                                    </admin>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

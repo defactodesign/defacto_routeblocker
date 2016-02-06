@@ -1,0 +1,24 @@
+{
+  "name": "defacto/defacto_routeblocker",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Extension for blocking access to routes via configuration",
+  "keywords": [
+    "magento",
+    "security"
+  ],
+  "homepage": "http://www.de-facto.com/",
+  "require": {
+    "php": ">=5.3"
+  },
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "De Facto Design Ltd",
+      "email": "developers@de-facto.com",
+      "role": "Author/Maintainer"
+    }
+  ]
+}

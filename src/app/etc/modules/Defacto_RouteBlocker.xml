@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Defacto
+ * @package     Defacto_RouteBlocker
+ * @author      De Facto Design <developers@de-facto.com>
+ * @license     GPL-3.0
+ */
+-->
+<config>
+    <modules>
+        <Defacto_RouteBlocker>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Defacto_RouteBlocker>
+    </modules>
+</config>
